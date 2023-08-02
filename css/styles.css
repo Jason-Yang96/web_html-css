@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
 @import "reset.css";
 @import "status-bar.css";
+@import "variables.css";
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -20,4 +22,27 @@ body {
     width: 70%;
     font-size: 16px;
     opacity: 0.7;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+}
+.login-form input {
+    border: none;
+    padding: 15px 0px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(0,0,0,0.3);
+    transition: border-color .3s ease-in-out;
+}
+.login-form input::placeholder{
+    color: rgb(0,0,0,0.5);
+}
+.login-form input[type = "submit"] {
+    border:none;
+    margin-bottom: 7px;
+}
+.login-form input:focus {
+    border-color: var(--yellow);
 }
