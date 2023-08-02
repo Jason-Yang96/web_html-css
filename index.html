@@ -1,0 +1,48 @@
+<!-- 디폴트로 index.html 파일을 찾도록 되어 있기에 이 파일을 만들어야 한다 -->
+<!-- BEM 방식을 고수하라(you don't have to tell whether this is class or id)
+1) make block component
+2) encompassed block has name related with parent block
+3) modifier has "--" style naming  -->
+<!-- input tag는 inline -->
+<!-- pseudo selectors에서 콜론을 항상 붙여 놔야지만 원하는 태그 지정 가능 -->
+<!-- class 내의 class를 지정할 때 띄어쓰기를 추가 해주어야 적용됨 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>KT</span>
+            <i class="fa-solid fa-wifi" style="color: #000000;"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>07:30</span>
+        </div>
+        <div class="status-bar__column">
+            <span>100%</span>
+            <i class="fa-solid fa-battery-full" style="color: #000000;"></i>
+            <i class="fa-solid fa-bolt" style="color: #000000;"></i>
+        </div>
+    </div>
+
+    <header class="login-header">
+        <h1 class="login-header__title">Welcome to Chat Room</h1>
+        <p class="login-header__text">If you have a Account, log in with your email or phone number</p>
+    </header>
+
+    <form class="login-form">
+        <input type="text" placeholder="Email or phone number"/>
+        <input type="password" placeholder="Password"/>
+        <input type="submit" value="Log In"/>
+        <input type="submit" value="Sign Up"/>
+        <a href="#">Find Your Account or Password</a>
+    </form>
+
+    <script src="https://kit.fontawesome.com/8f19b35f9e.js" crossorigin="anonymous"></script>
+</body>
+</html>
