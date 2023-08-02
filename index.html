@@ -6,6 +6,8 @@
 <!-- input tag는 inline -->
 <!-- pseudo selectors에서 콜론을 항상 붙여 놔야지만 원하는 태그 지정 가능 -->
 <!-- class 내의 class를 지정할 때 띄어쓰기를 추가 해주어야 적용됨 -->
+<!-- font의 경우 capital word에 주의해야 한다 -->
+<!-- box 안에 text가 있을 때 정렬 시 text-align을 해주면 된다. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,14 +27,14 @@
         </div>
         <div class="status-bar__column">
             <span>100%</span>
-            <i class="fa-solid fa-battery-full" style="color: #000000;"></i>
+            <i class="fa-solid fa-battery-full fa-lg" style="color: #000000;"></i>
             <i class="fa-solid fa-bolt" style="color: #000000;"></i>
         </div>
     </div>
 
     <header class="login-header">
         <h1 class="login-header__title">Welcome to Chat Room</h1>
-        <p class="login-header__text">If you have a Account, log in with your email or phone number</p>
+        <p class="login-header__text">If you have a Account,<br/> log in with your email or phone number</p>
     </header>
 
     <form class="login-form">
