@@ -1,0 +1,48 @@
+<!-- 
+    #HTML#
+    1. 디폴트로 index.html 파일을 찾도록 되어 있기에 이 파일을 만들어야 한다
+    2. BEM 방식을 고수하라(you don't have to tell whether this is class or id)
+        1) make block component
+        2) encompassed block has name related with parent block
+        3) modifier has "--" style naming 
+    3. input tag는 inline
+    4. form attribute 중에서 action과 method가 있다. action은 그 다음 어디로 이동할 것인지 정한다
+    method에는 POST & GET 이 있는데 POST의 경우 백엔드 서버가 있어야 사용 가능하다
+    GET의 경우 보안에 취약해서 로그인 할 때 사용하면 안된다.
+-->
+<!-- 
+    #CSS#    
+    1. font의 경우 capital word에 주의해야 한다
+    2. box 안에 text가 있을 때 정렬 시 text-align을 해주면 된다.
+    3. pseudo selectors에서 콜론을 항상 붙여 놔야지만 원하는 태그 지정 가능
+    4. class 내의 class를 지정할 때 띄어쓰기를 추가 해주어야 적용됨
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <link rel="stylesheet" href="css/styles.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Welcome to Chatroom</title>
+ </head>
+ <body>
+     <div class="status-bar">
+         <div class="status-bar__column">
+             <span>KT</span>
+             <i class="fa-solid fa-wifi" style="color: #000000;"></i>
+         </div>
+         <div class="status-bar__column">
+             <span>07:30</span>
+         </div>
+         <div class="status-bar__column">
+             <span>100%</span>
+             <i class="fa-solid fa-battery-full fa-lg" style="color: #000000;"></i>
+             <i class="fa-solid fa-bolt" style="color: #000000;"></i>
+         </div>
+     </div>
+ 
+
+ 
+     <script src="https://kit.fontawesome.com/8f19b35f9e.js" crossorigin="anonymous"></script>
+ </body>
+ </html>
