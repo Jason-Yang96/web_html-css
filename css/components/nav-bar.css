@@ -1,0 +1,40 @@
+.nav {
+    background-color: rgb(240, 241, 243);
+    padding: 19px 50px;
+    border-top: 1px rgb(226, 219, 219) solid;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__link {
+    position: relative;
+}
+.nav__chat-noti {
+    background-color: tomato;
+    color: white;
+    font-size: 13px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+.nav__ellipsis-noti {
+    background-color: tomato;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: -3px;
+}
