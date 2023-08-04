@@ -1,5 +1,6 @@
 .user-component {
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .user-component, .user-component__column:first-child {
     display: flex;
@@ -37,9 +38,6 @@
 }
 .user-component__title--not-fat {
     font-weight: 400;
-}
-.user-component--top-margin {
-    margin-top: 100px;
 }
 .user-component__time {
     margin-bottom: 7px;
