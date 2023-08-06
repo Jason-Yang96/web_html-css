@@ -18,7 +18,8 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    color: #2e363e
+    color: #2e363e;
+    height: 500vh;
 }
 .main-screen {
     padding: var(--horizontal-space)
