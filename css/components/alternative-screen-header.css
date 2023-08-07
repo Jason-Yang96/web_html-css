@@ -6,12 +6,11 @@
     margin-top: 10px;
     width: 100%;
     box-sizing: border-box;
+    position: sticky;
+    top: 38px;
 }
 .alt-header__column {
     width: 33%;
-}
-.alt-header__column .fa-bars {
-    margin-left: 20px;
 }
 .alt-header__column:nth-child(2) {
     display: flex;
@@ -21,6 +20,9 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.alt-header__column .fa-bars {
+    margin-left: 20px;
 }
 .alt-header__title {
     font-size: 22px;

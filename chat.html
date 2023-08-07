@@ -36,7 +36,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Chat</title>
  </head>
- <body>
+ <body id="chat-screen">
      <div class="status-bar">
          <div class="status-bar__column">
              <span>KT</span>
@@ -65,36 +65,22 @@
         </div>
      </header>
 
-     <main class="main-screen">
-    
+     <main class="main-screen main-chat">
+        <div class="chat__timestamp">
+            Tuesday, June 30, 2020
+        </div>
+        <div class="chat-message">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwnRN7gpST72Ppi-9uNgCMLk4JwMKnh9w0mg&usqp=CAU">
+            <div class="chat-message__content">
+                <span class="chat-message__author">Jason</span>
+                <div class="chat-message__info">
+                    <span class="chat-message__bubble">Hi!</span>
+                    <span class="chat-message__time">06:30</span>
+                </div>
+            </div>
+        </div>
      </main>
             
-     <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn">
-                <a class="nav__link" href="friends.html">
-                    <i class="fa-regular fa-user fa-xl" style="color: #000000;"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="chats.html">
-                    <!-- <span class="nav__chat-noti badge">1</span> -->
-                    <i class="fa-regular fa-comment fa-xl" style="color: #000000;"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="search.html">
-                    <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="more.html">
-                    <div class="nav__ellipsis-noti"></div>
-                    <i class="fa-solid fa-ellipsis fa-xl" style="color: #000000;"></i>
-                </a>
-            </li>
-        </ul>
-     </nav>
 
  
      <script src="https://kit.fontawesome.com/8f19b35f9e.js" crossorigin="anonymous"></script>
