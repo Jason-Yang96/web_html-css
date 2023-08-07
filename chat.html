@@ -27,7 +27,10 @@
     8. span의 경우 inline이기 때문에 높이와 너비가 설정이 안된다. display를 block으로 만들어 줘야 한다.
         하지만 이 경우 flex로 정렬이 안되기 때문에 삭제해준다. display:flex가 대체해준다. 
     9. position: absolute는 가장 가까운 relative 가진 부모 기준으로 움직이게 된다. 기준점 설정이 중요하다
- -->
+    10. position: fixed는 말 그대로 고정을 줘버리기 때문에 다른 요소와 겹치게 된다. 
+    따라서 sticky를 사용해주고 스크롤을 했을 때 어떤 위치에 있으면 좋을지 미리 계산해서 top: npx;을 주면 된다.
+    11. order 속성은 오로지 flex 자녀에게만 해당된다. 
+-->
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -79,8 +82,27 @@
                 </div>
             </div>
         </div>
+        <div class="chat-message chat-message--own">
+            <div class="chat-message__content">
+                <div class="chat-message__info">
+                    <span class="chat-message__bubble">What's up?</span>
+                    <span class="chat-message__time">06:30</span>
+                </div>
+            </div>
+        </div>
      </main>
-            
+     <form class="reply-form">
+        <div class="reply-form__column">
+            <i class="fa-regular fa-square-plus fa-xl"></i>
+        </div>
+        <div class="reply-form__column">
+            <input type="text" placeholder="Write a message..." />
+            <i class="fa-regular fa-face-smile fa-lg"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up"></i>
+            </button>
+        </div>
+     </form>
 
  
      <script src="https://kit.fontawesome.com/8f19b35f9e.js" crossorigin="anonymous"></script>
