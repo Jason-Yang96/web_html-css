@@ -9,6 +9,7 @@
     4. form attribute 중에서 action과 method가 있다. action은 그 다음 어디로 이동할 것인지 정한다
     method에는 POST & GET 이 있는데 POST의 경우 백엔드 서버가 있어야 사용 가능하다
     GET의 경우 보안에 취약해서 로그인 할 때 사용하면 안된다.
+    5. 제목과 부제목의 성격을 띈 것들은 그것에 맞춰서 태그를 사용해주어야 한다. 
 -->
 <!-- 
     #CSS#    
@@ -33,7 +34,7 @@
      <link rel="stylesheet" href="css/styles.css">
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Chats</title>
+     <title>Chat</title>
  </head>
  <body>
      <div class="status-bar">
@@ -51,46 +52,21 @@
          </div>
      </div>
      
-     <header class="screen-header">
-        <h1 class="screen-header__title">Chats</h1>
-        <div class="screen-header__icons">
-            <span><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i></span>
-            <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
-            <span><i class="fa-solid fa-music fa-lg" style="color: #000000;"></i></span>
-            <span><i class="fa-solid fa-gear fa-lg" style="color: #000000;"></i></span>
+     <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="chats.html"><i class="fa-solid fa-angle-left fa-xl" style="color: #000000;"></i></a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">Chat room</h1>
+        </div>
+        <div class="alt-header__column">
+            <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
+            <i class="fa-solid fa-bars fa-xl"></i>
         </div>
      </header>
 
-
      <main class="main-screen">
-        <a href="chat.html">
-            <div class="user-component">
-            <div class="user-component__column">
-                <img class="user-component__avatar user-component__avatar" src="https://play-lh.googleusercontent.com/cf3DwPLbS8Z55sDvUSTQ6PL1goPdm8KbZ81g4TEUAaeUh5LDhkzdjxKQ2RX6BGpv0x4"/>
-                <div class="user-component__text">
-                    <h3 class="user-component__title ">Chat room</h3>
-                    <h4 class="user-component__subtitle">Please check My Account info</h4>
-                </div>
-            </div>
-            <div class="user-component__column">
-                <div class="user-component__time">07:23</div>
-                <div class="badge">1</div>
-            </div>
-            </div>
-        </a>   
-       <div class="user-component">
-        <div class="user-component__column">
-            <img class="user-component__avatar user-component__avatar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwnRN7gpST72Ppi-9uNgCMLk4JwMKnh9w0mg&usqp=CAU"/>
-            <div class="user-component__text">
-                <h3 class="user-component__title ">Chat room</h3>
-                <h4 class="user-component__subtitle">Please check My Account info</h4>
-            </div>
-        </div>
-        <div class="user-component__column">
-            <div class="user-component__time">07:27</div>
-            <div class="badge">3</div>
-        </div>
-   </div>  
+    
      </main>
             
      <nav class="nav">
@@ -102,8 +78,8 @@
             </li>
             <li class="nav__btn">
                 <a class="nav__link" href="chats.html">
-                    <span class="nav__chat-noti badge">1</span>
-                    <i class="fa-solid fa-comment fa-xl" style="color: #000000;"></i>
+                    <!-- <span class="nav__chat-noti badge">1</span> -->
+                    <i class="fa-regular fa-comment fa-xl" style="color: #000000;"></i>
                 </a>
             </li>
             <li class="nav__btn">
