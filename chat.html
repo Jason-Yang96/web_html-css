@@ -30,6 +30,7 @@
     10. position: fixed는 말 그대로 고정을 줘버리기 때문에 다른 요소와 겹치게 된다. 
     따라서 sticky를 사용해주고 스크롤을 했을 때 어떤 위치에 있으면 좋을지 미리 계산해서 top: npx;을 주면 된다.
     11. order 속성은 오로지 flex 자녀에게만 해당된다. 
+    12. 기본적인 것은 클래스(반복적으로 사용되는 것)로 만들어주고 특이점이 발생할 때만 특정 html에서 클래서 부여해서 적용해주면 된다.
 -->
  <!DOCTYPE html>
  <html lang="en">
@@ -40,7 +41,7 @@
      <title>Chat</title>
  </head>
  <body id="chat-screen">
-     <div class="status-bar">
+     <div class="status-bar status-bar--chat">
          <div class="status-bar__column">
              <span>KT</span>
              <i class="fa-solid fa-wifi" style="color: #000000;"></i>
@@ -60,7 +61,7 @@
             <a href="chats.html"><i class="fa-solid fa-angle-left fa-xl" style="color: #000000;"></i></a>
         </div>
         <div class="alt-header__column">
-            <h1 class="alt-header__title">Chat room</h1>
+            <h1 class="alt-header__title">Jason</h1>
         </div>
         <div class="alt-header__column">
             <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #000000;"></i>
@@ -86,7 +87,7 @@
             <div class="chat-message__content">
                 <div class="chat-message__info">
                     <span class="chat-message__bubble">What's up?</span>
-                    <span class="chat-message__time">06:30</span>
+                    <span class="chat-message__time">06:31</span>
                 </div>
             </div>
         </div>
