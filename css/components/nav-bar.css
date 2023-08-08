@@ -15,10 +15,24 @@
 .nav__link {
     position: relative;
 }
+
+@keyframes notiAnimation {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-5px) rotateY(360deg);
+    }
+    100% {
+
+    }
+    
+}
 .nav__chat-noti {
     position: absolute;
     top: -10px;
     right: -10px;
+    animation: notiAnimation 2s ease-in-out infinite;
 }
 .nav__ellipsis-noti {
     background-color: tomato;
