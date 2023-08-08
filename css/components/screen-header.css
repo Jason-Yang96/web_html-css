@@ -17,15 +17,3 @@
 .screen-header__icons span {
     margin-left: 18px;
 }
-.screen-header__setting {
-    position: relative;
-}
-.screen-header__setting-noti {
-    background-color: tomato;
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    position: absolute;
-    top: -2px;
-    right: -3px;
-}
